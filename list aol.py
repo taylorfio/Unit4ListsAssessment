@@ -1,5 +1,4 @@
-points = 0
-play_list = []
+import time
 
 
 def point_function(point):
@@ -40,31 +39,69 @@ def word_search(gusword, gusnum, file_name, line_num, first_num, second_num):
     except IOError:
         print("brokeoz")
 
+restart = 1
+while restart == 1:
+    points = 0
+    play_list = []
+    print("             _                                                             _                               _")
+    time.sleep(0.3)
+    print("            | |                          _                                | |                             | |")
+    time.sleep(0.3)
+    print(" _ _ _  ____| | ____ ___  ____   ____   | |_  ___     _ _ _  ___   ____ _ | |    ___  ____ ____  ____ ____| | _")
+    time.sleep(0.3)
+    print("| | | |/ _  ) |/ ___) _ \|    \ / _  )  |  _)/ _ \   | | | |/ _ \ / ___) || |   /___)/ _  ) _  |/ ___) ___) || \ ")
+    time.sleep(0.3)
+    print("| | | ( (/ /| ( (__| |_| | | | ( (/ /   | |_| |_| |  | | | | |_| | |  ( (_| |  |___ ( (/ ( ( | | |  ( (___| | | | ")
+    time.sleep(0.3)
+    print(" \____|\____)_|\____)___/|_|_|_|\____)   \___)___/    \____|\___/|_|   \____|  (___/ \____)_||_|_|   \____)_| |_| ")
+    time.sleep(0.3)
 
-print("welcome to word search")
-while "1" not in play_list or "2" not in play_list or "3" not in play_list:
-    choice_input = input("what level do you want 1_easy, 2_medium, 3_hard")
-    while choice_input != "1" and choice_input != "2" and choice_input != "3":
-        print("input not valid")
+    while "1" not in play_list or "2" not in play_list or "3" not in play_list:
         choice_input = input("what level do you want 1_easy, 2_medium, 3_hard")
+        while choice_input != "1" and choice_input != "2" and choice_input != "3":
+            print("input not valid")
+            choice_input = input("what level do you want 1_easy, 2_medium, 3_hard")
 
-    if choice_input == "1":
-        if "1" in play_list:
-            print("you already chose this")
-        if "1" not in play_list:
-            word_search("ten", 10, "easy file.txt", 7, 8, 18)
-            play_list.append("1")
-    if choice_input == "2":
-        if "2" in play_list:
-            print("you already chose this")
-        if "2" not in play_list:
-            word_search("six", 6, "medium file.txt", 9, 10, 16)
-            play_list.append("2")
-    if choice_input == "3":
-        if "3" in play_list:
-            print("you already chose this")
-        if "3" not in play_list:
-            word_search("seven", 7, "hard file.txt", 12, 13, 20)
-            play_list.append("3")
-print("thank you for playing :)")
-print("final score", points)
+        if choice_input == "1":
+            if "1" in play_list:
+                print("you already chose this")
+            if "1" not in play_list:
+                word_search("ten", 10, "easy file.txt", 7, 8, 18)
+                play_list.append("1")
+        if choice_input == "2":
+            if "2" in play_list:
+                print("you already chose this")
+            if "2" not in play_list:
+                word_search("six", 6, "medium file.txt", 9, 10, 16)
+                play_list.append("2")
+        if choice_input == "3":
+            if "3" in play_list:
+                print("you already chose this")
+            if "3" not in play_list:
+                word_search("seven", 7, "hard file.txt", 12, 13, 20)
+                play_list.append("3")
+
+    print("      _                 _                              ___                     _             _")
+    time.sleep(0.3)
+    print(" _   | |               | |                            / __)                   | |           (_) ")
+    time.sleep(0.3)
+    print("| |_ | | _   ____ ____ | |  _    _   _  ___  _   _   | |__ ___   ____    ____ | | ____ _   _ _ ____   ____ ")
+    time.sleep(0.3)
+    print("|  _)| || \ / _  |  _ \| | / )  | | | |/ _ \| | | |  |  __) _ \ / ___)  |  _ \| |/ _  | | | | |  _ \ / _  | ")
+    time.sleep(0.3)
+    print("| |__| | | ( ( | | | | | |< (   | |_| | |_| | |_| |  | | | |_| | |      | | | | ( ( | | |_| | | | | ( ( | | ")
+    time.sleep(0.3)
+    print(" \___)_| |_|\_||_|_| |_|_| \_)   \__  |\___/ \____|  |_|  \___/|_|      | ||_/|_|\_||_|\__  |_|_| |_|\_|| | ")
+    time.sleep(0.3)
+    print("                                (____/                                  |_|           (____/        (_____| ")
+    time.sleep(0.3)
+
+    print("final score", points)
+    ending_input = input("do you want to restart: yes or no  ")
+    while ending_input != "no" and ending_input != "yes":
+        print("error")
+        ending_input = input("do you want to restart: yes or no  ")
+    if ending_input == "no":
+        restart = restart + 1
+    elif ending_input == "yes":
+        restart = restart
