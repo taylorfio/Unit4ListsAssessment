@@ -1,24 +1,8 @@
-import time
-import random
-
-
 def point_function(point):
     global points
     points = point + 1
     print("you get one point")
     print("you are now at", points, "points")
-
-
-def random_letter_function():  # doesn't work
-    random_letter_list = []
-    try:
-        random_letter = open("random letter.txt", "r")
-        random_letter_list = (random_letter.read(26))
-        random_letter.close()
-    except IOError:
-        print("brokeoz")
-    xy = random.choice(random_letter_list)
-    return xy
 
 
 def word_search(gusword, gusnum, file_name, line_num, first_num, second_num):
@@ -31,9 +15,7 @@ def word_search(gusword, gusnum, file_name, line_num, first_num, second_num):
         for line in wordfile:
             if finish == line_num:
                 break
-            # line.replace("0", random_letter) might need this in a loop until all characters are looked at
-            while "0" in wordfile:
-                line.replace("0", str(random_letter_function()))  # doesn't work
+            #line.replace("0", random_letter) might need this in a loop until all characters are looked at
             print(line, end="")
             finish = finish + 1
         wordfile.seek(0)
@@ -55,23 +37,10 @@ def word_search(gusword, gusnum, file_name, line_num, first_num, second_num):
     except IOError:
         print("brokeoz")
 
-
 restart = 1
 while restart == 1:
     points = 0
     play_list = []
-    print("             _                                                             _                               _")
-    time.sleep(0.3)
-    print("            | |                          _                                | |                             | |")
-    time.sleep(0.3)
-    print(" _ _ _  ____| | ____ ___  ____   ____   | |_  ___     _ _ _  ___   ____ _ | |    ___  ____ ____  ____ ____| | _")
-    time.sleep(0.3)
-    print("| | | |/ _  ) |/ ___) _ \|    \ / _  )  |  _)/ _ \   | | | |/ _ \ / ___) || |   /___)/ _  ) _  |/ ___) ___) || \ ")
-    time.sleep(0.3)
-    print("| | | ( (/ /| ( (__| |_| | | | ( (/ /   | |_| |_| |  | | | | |_| | |  ( (_| |  |___ ( (/ ( ( | | |  ( (___| | | | ")
-    time.sleep(0.3)
-    print(" \____|\____)_|\____)___/|_|_|_|\____)   \___)___/    \____|\___/|_|   \____|  (___/ \____)_||_|_|   \____)_| |_| ")
-    time.sleep(0.3)
 
     while "1" not in play_list or "2" not in play_list or "3" not in play_list:
         choice_input = input("what level do you want 1_easy, 2_medium, 3_hard")
@@ -97,21 +66,6 @@ while restart == 1:
             if "3" not in play_list:
                 word_search("seven", 7, "hard file.txt", 12, 13, 20)
                 play_list.append("3")
-
-    print("      _                 _                              ___                     _             _")
-    time.sleep(0.3)
-    print(" _   | |               | |                            / __)                   | |           (_) ")
-    time.sleep(0.3)
-    print("| |_ | | _   ____ ____ | |  _    _   _  ___  _   _   | |__ ___   ____    ____ | | ____ _   _ _ ____   ____ ")
-    time.sleep(0.3)
-    print("|  _)| || \ / _  |  _ \| | / )  | | | |/ _ \| | | |  |  __) _ \ / ___)  |  _ \| |/ _  | | | | |  _ \ / _  | ")
-    time.sleep(0.3)
-    print("| |__| | | ( ( | | | | | |< (   | |_| | |_| | |_| |  | | | |_| | |      | | | | ( ( | | |_| | | | | ( ( | | ")
-    time.sleep(0.3)
-    print(" \___)_| |_|\_||_|_| |_|_| \_)   \__  |\___/ \____|  |_|  \___/|_|      | ||_/|_|\_||_|\__  |_|_| |_|\_|| | ")
-    time.sleep(0.3)
-    print("                                (____/                                  |_|           (____/        (_____| ")
-    time.sleep(0.3)
 
     print("final score", points)
     ending_input = input("do you want to restart: yes or no  ")

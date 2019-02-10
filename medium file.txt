@@ -1,3 +1,20 @@
+0 0 0 0 0 0 0 0 0
+0 0 0 T I B B A R
+0 0 0 T 0 0 L E 0
+0 0 0 O 0 I T 0 0
+0 0 0 R B S 0 e 0
+0 0 0 R M 0 0 0 n
+0 0 E A Y P P U P
+0 G H P 0 0 0 0 0
+0 0 0 0 0 0 0 0 0
+
+kitten
+puppy
+parrot
+rabbit
+gerbil
+hamster
+
 Z P N K G G O T E
 S M S T I B B A R
 V M D T V T L E U
@@ -7,10 +24,3 @@ S N N R M P S L N
 D O E A Y P P U P
 B G H P G G R V O
 V N T E T F Y Y N
-
-kitten
-puppy
-parrot
-rabbit
-gerbil
-hamster

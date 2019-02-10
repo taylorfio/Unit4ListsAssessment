@@ -1,3 +1,24 @@
+0 0 0 0 0 0 B I N A R Y
+0 0 0 0 0 0 0 0 0 0 E 0
+0 0 0 0 0 0 0 0 0 0 T F
+0 0 0 0 0 0 0 0 0 0 E U
+0 0 0 0 0 V 0 0 0 0 M N
+0 0 0 0 0 A 0 0 0 0 a C
+0 0 0 0 0 R 0 0 0 0 R T
+0 0 M H T I R O G L A I
+0 0 0 0 0 A 0 0 E 0 p O
+0 0 0 0 0 B 0 0 0 T 0 N
+0 0 0 0 0 L 0 0 H 0 Y 0
+0 0 0 0 0 E 0 0 0 G U B
+
+binary
+algorithm
+bug
+byte
+variable
+function
+parameter
+
 O D E I S R B I N A R Y
 V E O O X S S Q Y M E O
 L I J C X S R M G N T F
@@ -10,11 +31,3 @@ R P B K N A C C E F P O
 N N V W O B L I E T I N
 S O R C R L E D H C Y E
 G G O K T E G W S G U B
-
-binary
-algorithm
-bug
-byte
-variable
-function
-parameter

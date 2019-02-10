@@ -1,10 +1,10 @@
-G T A Y L O R
-E H N E O D I
-T D T H I N G
+0 T A Y L O R
+0 0 N 0 O D I
+0 0 T H I N G
 A G A I N I H
-F I N D Q M T
+F I N D 0 M T
 B A L A N C E
-X S U P B O I
+0 S U P B O I
 
 taylor
 ant
@@ -16,3 +16,11 @@ again
 find
 balance
 supboi
+
+G T A Y L O R
+E H N E O D I
+T D T H I N G
+A G A I N I H
+F I N D Q M T
+B A L A N C E
+X S U P B O I

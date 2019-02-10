@@ -1,0 +1,56 @@
+0 T A Y L O R
+0 0 N 0 O D I
+0 0 T H I N G
+A G A I N I H
+F I N D 0 M T
+B A L A N C E
+0 S U P B O I
+
+taylor
+ant
+loin
+mind
+thing
+right
+again
+find
+balance
+supboi
+
+0 0 0 0 0 0 0 0 0
+0 0 0 T I B B A R
+0 0 0 T 0 0 L E 0
+0 0 0 O 0 I T 0 0
+0 0 0 R B S 0 e 0
+0 0 0 R M 0 0 0 n
+0 0 E A Y P P U P
+0 G H P 0 0 0 0 0
+0 0 0 0 0 0 0 0 0
+
+kitten
+puppy
+parrot
+rabbit
+gerbil
+hamster
+
+0 0 0 0 0 0 B I N A R Y
+0 0 0 0 0 0 0 0 0 0 E 0
+0 0 0 0 0 0 0 0 0 0 T F
+0 0 0 0 0 0 0 0 0 0 E U
+0 0 0 0 0 V 0 0 0 0 M N
+0 0 0 0 0 A 0 0 0 0 a C
+0 0 0 0 0 R 0 0 0 0 R T
+0 0 M H T I R O G L A I
+0 0 0 0 0 A 0 0 E 0 p O
+0 0 0 0 0 B 0 0 0 T 0 N
+0 0 0 0 0 L 0 0 H 0 Y 0
+0 0 0 0 0 E 0 0 0 G U B
+
+binary
+algorithm
+bug
+byte
+variable
+function
+parameter
