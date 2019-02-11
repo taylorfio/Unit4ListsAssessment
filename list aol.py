@@ -30,7 +30,6 @@ def word_search(gusword, gusnum, file_name, line_num, first_num, second_num):
         for line in wordfile:
             if finish == line_num:
                 break
-            # line.replace("0", random_letter) might need this in a loop until all characters are looked at
             line = list(line)
             for i in range(len(line)):
                 if line[i] == "0":
