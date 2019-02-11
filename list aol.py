@@ -17,8 +17,7 @@ def random_letter_function():  # doesn't work
         random_letter.close()
     except IOError:
         print("brokeoz")
-    xy = random.choice(random_letter_list)
-    return xy
+    return random.choice(random_letter_list)
 
 
 def word_search(gusword, gusnum, file_name, line_num, first_num, second_num):
@@ -32,9 +31,12 @@ def word_search(gusword, gusnum, file_name, line_num, first_num, second_num):
             if finish == line_num:
                 break
             # line.replace("0", random_letter) might need this in a loop until all characters are looked at
-            while "0" in wordfile:
-                line.replace("0", str(random_letter_function()))  # doesn't work
-            print(line, end="")
+            line = list(line)
+            for i in range(len(line)):
+                if line[i] == "0":
+                     line[i] = str(random_letter_function()) # doesn't work
+            line = "".join(line).strip()
+            print(line)
             finish = finish + 1
         wordfile.seek(0)
         x = wordfile.readlines()[first_num:second_num]
